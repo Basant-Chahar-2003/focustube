@@ -74,3 +74,38 @@ FocusTube/
     ├── SearchModal.jsx
     └── NotesPanel.jsx
 ```
+
+## Version 1.0
+
+Focus-Tube / Focusflow v1.0 is the initial public release. Highlights:
+
+- Resume playback at the exact timestamp you left (local storage + server sync)
+- Per-user notes with timestamps saved to the server
+- Library to save and track videos, mark complete
+- Simple auth (JWT cookie), MongoDB-backed server storage for notes/progress
+
+### Quick start (dev)
+
+```bash
+npm install
+npm run dev
+```
+
+Environment variables used by the project (examples):
+
+```
+MONGODB_URI=mongodb://127.0.0.1:27017
+MONGODB_DB=focusflow
+JWT_SECRET=replace-with-secure-secret
+YOUTUBE_API_KEY=your_key_here
+```
+
+### Notes about progress persistence
+- Client-side `lib/storage.js` still persists locally (fallback)
+- Server-side per-user progress is stored in the `progress` collection. Consider adding an index:
+
+```js
+db.progress.createIndex({ user_id: 1, video_id: 1 }, { unique: true })
+```
+
+If you'd like, I can add a migration script to create that index and commit it.
