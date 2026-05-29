@@ -1,0 +1,16 @@
+[
+  {
+    "id": "user_1779597644659_t0p1sidmje",
+    "name": "basant",
+    "email": "basantchahar1707@gmail.com",
+    "passwordHash": "$2a$12$05nDFKuV9QH0itayCl7vMOrC5ihOjXXHC1qBhngwkvYGfJ7OIx9IK",
+    "createdAt": "2026-05-24T04:40:44.659Z"
+  },
+  {
+    "id": "user_1779598894904_7p68l75y4a9",
+    "name": "jaswant",
+    "email": "jaswant@gmail.com",
+    "passwordHash": "$2a$12$nP4jP6Vfw9o6sm1KPx7snO38tBeeUGnqQF0h01IxLDsktlC9HeMxW",
+    "createdAt": "2026-05-24T05:01:34.904Z"
+  }
+]

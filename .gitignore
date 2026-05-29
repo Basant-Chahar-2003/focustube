@@ -1,0 +1,50 @@
+(# Node modules
+node_modules/
+
+# Next.js build output
+.next/
+out/
+build/
+
+# Production
+dist/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Editor directories
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Caches
+.cache/
+
+# Database files
+*.sqlite
+*.db
+
+# Misc
+.history/
+node_modules/.cache/
+vercel.json
+
